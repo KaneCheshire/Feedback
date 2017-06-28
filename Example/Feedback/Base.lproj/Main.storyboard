@@ -1,21 +1,93 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Feedback_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUG-rw-ctS">
+                                <rect key="frame" x="155" y="100" width="64" height="30"/>
+                                <state key="normal" title="Selection"/>
+                                <connections>
+                                    <action selector="selectionTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WJ8-A0-RYc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51Q-1R-X5K">
+                                <rect key="frame" x="144" y="210" width="86" height="30"/>
+                                <state key="normal" title="Light impact"/>
+                                <connections>
+                                    <action selector="lightTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UgL-JW-nUZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qqr-Tr-4fp">
+                                <rect key="frame" x="134" y="256" width="106" height="30"/>
+                                <state key="normal" title="Medium impact"/>
+                                <connections>
+                                    <action selector="mediumTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SIX-DQ-Wnc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="do3-Jf-WFU">
+                                <rect key="frame" x="140" y="302" width="94" height="30"/>
+                                <state key="normal" title="Heavy impact"/>
+                                <connections>
+                                    <action selector="heavyTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fc1-xT-16T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9y-kN-cOb">
+                                <rect key="frame" x="118" y="412" width="139" height="30"/>
+                                <state key="normal" title="Success notification"/>
+                                <connections>
+                                    <action selector="successTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aPL-c9-vhO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAt-Ot-d8v">
+                                <rect key="frame" x="130" y="458" width="115" height="30"/>
+                                <state key="normal" title="Error notification"/>
+                                <connections>
+                                    <action selector="errorTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wWS-ry-mYy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGR-lQ-Jq0">
+                                <rect key="frame" x="118.5" y="504" width="138" height="30"/>
+                                <state key="normal" title="Warning notification"/>
+                                <connections>
+                                    <action selector="warningTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Voy-B4-3oT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BUG-rw-ctS" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="80" id="2F5-2z-gYq"/>
+                            <constraint firstItem="Qqr-Tr-4fp" firstAttribute="top" secondItem="51Q-1R-X5K" secondAttribute="bottom" constant="16" id="A5e-tQ-gZM"/>
+                            <constraint firstItem="JGR-lQ-Jq0" firstAttribute="centerX" secondItem="iAt-Ot-d8v" secondAttribute="centerX" id="Je5-Rz-Bc6"/>
+                            <constraint firstItem="iAt-Ot-d8v" firstAttribute="top" secondItem="e9y-kN-cOb" secondAttribute="bottom" constant="16" id="KgJ-JT-9Qd"/>
+                            <constraint firstItem="BUG-rw-ctS" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="PnM-gl-C0A"/>
+                            <constraint firstItem="e9y-kN-cOb" firstAttribute="top" secondItem="do3-Jf-WFU" secondAttribute="bottom" constant="80" id="RPD-48-yKv"/>
+                            <constraint firstItem="JGR-lQ-Jq0" firstAttribute="top" secondItem="iAt-Ot-d8v" secondAttribute="bottom" constant="16" id="XFv-WG-KpV"/>
+                            <constraint firstItem="do3-Jf-WFU" firstAttribute="top" secondItem="Qqr-Tr-4fp" secondAttribute="bottom" constant="16" id="Xa2-Dq-tbm"/>
+                            <constraint firstItem="51Q-1R-X5K" firstAttribute="centerX" secondItem="BUG-rw-ctS" secondAttribute="centerX" id="YcK-7D-uuQ"/>
+                            <constraint firstItem="iAt-Ot-d8v" firstAttribute="centerX" secondItem="e9y-kN-cOb" secondAttribute="centerX" id="ai3-1l-Sbl"/>
+                            <constraint firstItem="do3-Jf-WFU" firstAttribute="centerX" secondItem="Qqr-Tr-4fp" secondAttribute="centerX" id="hDf-cf-4LN"/>
+                            <constraint firstItem="51Q-1R-X5K" firstAttribute="top" secondItem="BUG-rw-ctS" secondAttribute="bottom" constant="80" id="k66-ax-kdT"/>
+                            <constraint firstItem="Qqr-Tr-4fp" firstAttribute="centerX" secondItem="51Q-1R-X5K" secondAttribute="centerX" id="khf-4y-KK1"/>
+                            <constraint firstItem="e9y-kN-cOb" firstAttribute="centerX" secondItem="do3-Jf-WFU" secondAttribute="centerX" id="mIn-oE-D2g"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

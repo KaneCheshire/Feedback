@@ -1,42 +1,28 @@
-#
-# Be sure to run `pod lib lint Feedback.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'Feedback'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of Feedback.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.version          = '1.0.0'
+  s.summary          = 'Feedback is a small and easy to use wrapper, for generating different styles of feedback in the form of haptics and sounds.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  Feedback is a really easy way to provide nuanced and helpful feedback to your users on iOS.
+  Feedback comes in the form of haptics, or sounds, or both. With Feedback you can use the default
+  sounds for different types of feedback, or provide a custom sound to use.
                        DESC
 
-  s.homepage         = 'https://github.com/Kane Cheshire/Feedback'
+  s.homepage         = 'https://github.com/KaneCheshire/Feedback'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Kane Cheshire' => 'kane.cheshire@googlemail.com' }
-  s.source           = { :git => 'https://github.com/Kane Cheshire/Feedback.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/KaneCheshire/Feedback.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/kanecheshire'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'Feedback/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'Feedback' => ['Feedback/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.resource_bundles = {
+    'FeedbackAssets' => ['Feedback/Assets/*.m4a']
+  }
+
+  s.frameworks = 'UIKit', 'AVFoundation'
 end

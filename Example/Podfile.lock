@@ -1,0 +1,16 @@
+PODS:
+  - Feedback (1.0.0)
+
+DEPENDENCIES:
+  - Feedback (from `../`)
+
+EXTERNAL SOURCES:
+  Feedback:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Feedback: efef55fba535c6748e0cd4a61d57b265e679929f
+
+PODFILE CHECKSUM: 865600899fae3241740c44a8ad159ab426ffe2ae
+
+COCOAPODS: 1.2.1
