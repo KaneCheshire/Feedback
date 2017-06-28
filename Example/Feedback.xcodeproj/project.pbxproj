@@ -15,6 +15,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		887091A4FA1123037CD01558 /* Pods_Feedback_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948E6F9C22A875749B8AE2D5 /* Pods_Feedback_Example.framework */; };
+		C315F58B1F04422B003EBA16 /* custom.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C315F58A1F04422B003EBA16 /* custom.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6A56235C405D430B7FDCAFC1 /* Pods_Feedback_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Feedback_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		948E6F9C22A875749B8AE2D5 /* Pods_Feedback_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Feedback_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C315F58A1F04422B003EBA16 /* custom.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = custom.m4a; sourceTree = "<group>"; };
 		D415DA92879A4B3D931947DD /* Pods-Feedback_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feedback_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Feedback_Example/Pods-Feedback_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DFDFCD5A530F208F112D6B91 /* Feedback.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Feedback.podspec; path = ../Feedback.podspec; sourceTree = "<group>"; };
 		E0835E35DC663FF4BF0EAAEF /* Pods-Feedback_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feedback_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Feedback_Example/Pods-Feedback_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				C315F58A1F04422B003EBA16 /* custom.m4a */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -252,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				C315F58B1F04422B003EBA16 /* custom.m4a in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);

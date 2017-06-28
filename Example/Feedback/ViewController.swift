@@ -15,9 +15,12 @@ import Feedback
 
 class ViewController: UIViewController {
 
+
+    
     @IBAction func selectionTapped(_ sender: Any) {
         selection.generateFeedback()
         selection.prepareForUse()
+//        custom.generateFeedback()
     }
     
     @IBAction func lightTapped(_ sender: Any) {
@@ -57,6 +60,7 @@ class ViewController: UIViewController {
     let success = Feedback(hapticType: .notification(.success), soundType: .notification(.success))
     let error = Feedback(hapticType: .notification(.error), soundType: .notification(.error))
     let warning = Feedback(hapticType: .notification(.warning), soundType: .notification(.warning))
+    let custom = Feedback(hapticType: nil, soundType: .custom(soundName: "custom", extension: "m4a"))
     
     override func viewDidLoad() {
         super.viewDidLoad()
