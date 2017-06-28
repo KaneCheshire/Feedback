@@ -109,7 +109,8 @@ public struct Feedback {
     
     /// Creates a new generator configured with a haptic type.
     ///
-    /// - Parameter hapticType: The haptic type this generator is configured with.
+    /// - Parameter hapticType: The haptic type this generator is configured with. Must be provided if soundType is nil.
+    /// - Parameter soundType: The sound type this generator is configured with. Must be provided if hapticType is nil.
     public init(hapticType: HapticType? = nil, soundType: SoundType? = nil) {
         assert(hapticType != nil || soundType != nil, "You need to provide at least a haptic or sound type!")
         
@@ -133,8 +134,8 @@ public struct Feedback {
         }
     }
     
-    /// Generates a haptic.
-    /// The type of haptic generates will be determined by the configuration at creation time.
+    /// Generates feedback..
+    /// The type of haptic or sound generated will be determined by the configuration at creation time.
     ///
     /// It is safe to call this function on any version of iOS without checking availability.
     public func generateFeedback() {
@@ -149,7 +150,7 @@ public struct Feedback {
         }
     }
     
-    /// Prepares the taptic engine for use by powering it up momentarily.
+    /// Prepares the taptic engine and underlying AVPlayer for use by powering it up momentarily.
     /// Call immediately after generating a haptic to keep the taptic engine powered up for
     /// a few seconds to reduce latency. Useful when scrolling through a list or timeline.
     ///
