@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
-  s.name             = 'Feedback'
+  s.name             = 'FeedbackGenerator'
   s.version          = '1.0.0'
-  s.summary          = 'Feedback is a small and easy to use wrapper, for generating different styles of feedback in the form of haptics and sounds.'
+  s.summary          = 'Feedback is a small and easy to use wrapper, for generating different styles of feedback in the form of haptics, sounds, or both.'
 
   s.description      = <<-DESC
   Feedback is a really easy way to provide nuanced and helpful feedback to your users on iOS.
