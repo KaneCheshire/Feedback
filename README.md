@@ -1,9 +1,9 @@
 # Feedback
 
 [![CI Status](http://img.shields.io/travis/KaneCheshire/Feedback.svg?style=flat)](https://travis-ci.org/KaneCheshire/Feedback)
-[![Version](https://img.shields.io/cocoapods/v/Feedback.svg?style=flat)](http://cocoapods.org/pods/FeedbackGenerator)
-[![License](https://img.shields.io/cocoapods/l/Feedback.svg?style=flat)](http://cocoapods.org/pods/FeedbackGenerator)
-[![Platform](https://img.shields.io/cocoapods/p/Feedback.svg?style=flat)](http://cocoapods.org/pods/FeedbackGenerator)
+[![Version](https://img.shields.io/cocoapods/v/FeedbackGenerator.svg?style=flat)](http://cocoapods.org/pods/FeedbackGenerator)
+[![License](https://img.shields.io/cocoapods/l/FeedbackGenerator.svg?style=flat)](http://cocoapods.org/pods/FeedbackGenerator)
+[![Platform](https://img.shields.io/cocoapods/p/FeedbackGenerator.svg?style=flat)](http://cocoapods.org/pods/FeedbackGenerator)
 
 The easiest way to provide feedback in the form of haptics and sounds for your users.
 
