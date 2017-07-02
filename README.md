@@ -4,7 +4,7 @@ The easiest way to provide feedback in the form of haptics and sounds for your u
 
 ## Overview
 
-Feedback is an evolution of my other pod, [HapticGenerator](https://github.com/KaneCheshire/HapticGenerator). Just like **HapticGenerator**,
+**Feedback** is an evolution of my other pod, **[HapticGenerator](https://github.com/KaneCheshire/HapticGenerator)**. Just like **HapticGenerator**,
 **Feedback** provides an easy and coherent way to generate different types of haptic feedback.
 **Feedback** goes a step further and allows you to also play _sound_ as feedback, either with
 or without accompanying haptics.
