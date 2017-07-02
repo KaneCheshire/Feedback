@@ -2,6 +2,8 @@
 
 The easiest way to provide feedback in the form of haptics and sounds for your users.
 
+Providing feedback to your users is important; from indicating that a button was tapped, to indicating that an error occurred.
+
 ## Overview
 
 **Feedback** is an evolution of my other pod, **[HapticGenerator](https://github.com/KaneCheshire/HapticGenerator)**. Just like **HapticGenerator**,
@@ -11,6 +13,8 @@ or without accompanying haptics.
 
 **Feedback** comes with a few default sounds, courtesy of Facebook's [Sound Kit](http://facebook.design/soundkit), but also has
 an option to allow you to use custom sounds, which means it will work with any brand.
+
+Note that the provided sounds are for _prototyping only_ (see Facebook's terms for Sound Kit), in production you must provide your own custom sounds, which **Feedback** supports.
 
 ## Installation
 
