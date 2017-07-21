@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'FeedbackGenerator'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Feedback is a small and easy to use wrapper, for generating different styles of feedback in the form of haptics, sounds, or both.'
 
   s.description      = <<-DESC
@@ -10,7 +10,6 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = 'https://github.com/KaneCheshire/Feedback'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Kane Cheshire' => 'kane.cheshire@googlemail.com' }
   s.source           = { :git => 'https://github.com/KaneCheshire/Feedback.git', :tag => s.version.to_s }

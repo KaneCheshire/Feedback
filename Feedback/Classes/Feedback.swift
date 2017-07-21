@@ -167,7 +167,7 @@ public struct Feedback {
 private extension Bundle {
     
     static let assets: Bundle? = {
-        let bundle = Bundle(identifier: "org.cocoapods.Feedback")
+        let bundle = Bundle(identifier: "org.cocoapods.FeedbackGenerator")
         guard let url = bundle?.url(forResource: "FeedbackAssets", withExtension: "bundle") else { return nil }
         return Bundle(url: url)
     }()
